@@ -1,0 +1,307 @@
+@charset "UTF-8";
+@import "./reset.css";
+:root {
+	--primary-color: #f9c02d;
+	--secondary-color: #000;
+	--third-color: #666;
+	--fourth-color: #45648B;
+	--text-color: #fff;
+}
+
+html{
+	font-size: 20px;
+}
+
+body{
+	font-family: "Noto Sans KR", sans-serif;
+	color : #222;
+	line-height: 1.5;
+	letter-spacing: -1px;
+	
+}
+/* ========== 구글폰트 =============== */
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
+}
+.header-top {
+	max-width : 1190px;
+	min-height : 200px;
+	margin : 0 auto;
+	position : relative;
+}
+
+.links{
+	float : left;
+	margin : 70px 0 0 0;
+	
+}
+
+.links li, .icons li{
+	float : left;
+
+}
+.links li a {
+	font-size: .7rem;
+	color: #666666;
+}
+
+.links li a:hover {
+	color : #000000;
+}
+.links li:nth-child(2), .icons li:nth-child(2){
+	margin : 0 .5rem;
+}
+.logo {
+	position : absolute;
+	left : 50%;
+	margin-left : -150px;
+	bottom : -10px;
+}
+
+.icons{
+	float : right;
+	margin : 70px 0 0 0;
+}
+
+.header-bottom{
+	border-top : 4px solid var(--primary-color);
+	clear :both;
+}
+.gnb{
+	width : 600px;
+	margin : 0 auto;
+	overflow: hidden;
+}
+.gnb li{
+	float : left;
+	width : 150px;
+	text-align: center;
+/* 	padding : .875rem 0; */
+}
+
+.gnb li a{
+	display: block;
+	padding : .875rem 0;
+	font-weight: 900;
+	font-size : .9rem;
+	color : var(--primary-color);
+}
+
+.gnb li a:hover{
+	color : #000000;
+}
+
+/* ============================video============================== */
+
+
+.video-wrap {
+	width : 920px;
+	height : 460px;
+	margin : 0 auto;
+	position : relative;
+}
+
+
+.characters{
+	position : absolute;
+	top : 200px;
+	left : 50%;
+	margin-left: calc(-378px / 2);	
+}
+/* ===========================section=============================== */
+.mt-100{
+	margin-top : 100px !important;
+}
+.mt-250{
+	margin-top : 250px !important;
+}
+.container{
+	max-width : 920px;
+	margin : 0 auto;
+}
+
+.container h3, .container h3 + p{
+	text-align : center;
+}
+
+.container h3{
+	color : #f9c02d;
+	text-transform: capitalize;
+	font-size: 1.5rem;
+	font-weight: 900;
+}
+
+.container h3 + p{
+	margin : .5rem 0;
+	font-size : .875rem;
+	color : var(--third-color);
+}
+.char-list::after, .carousel::after {
+	content: '';
+	display:block;
+	clear : both;
+	height: 0;
+}
+
+.char-list li{
+	float: left;
+	border : 1px solid var(--primary-color); 
+	box-sizing : border-box;
+	width : calc(100% / 3);
+	overflow: hidden;
+}
+
+.container-fluid {
+	background-color: var(--fourth-color);
+	position: relative; 
+}
+
+.prev{
+	position: absolute;
+	left : 10%;
+	top : calc(50% - 20px);
+	color : var(--text-color);
+	border : 1px solid #ccc;
+	padding : 1rem;
+	
+}
+
+.carousel {
+	max-width : 920px;
+	margin : 0 auto;
+	padding : 1rem 0;
+}
+
+.carousel div{
+	float: left;
+}
+
+.attach-img{
+	width : 30%;
+	margin-right : 2%;
+}
+
+.user-post{
+	width : calc(100% - 300px);
+	color : var(--text-color);
+	
+}
+.next{
+	position: absolute;
+	right: 10%;
+	top: calc(50% - 20px);
+	color: var(--text-color);
+	border: 1px solid #ccc;
+	padding: 1rem;
+}
+
+
+.goods-list{
+	overflow : hidden;
+}
+
+
+.goods-list li{
+	float :left;
+	width : calc(100% / 3);
+	text-align: center;
+	box-sizing: border-box;
+	border: 1px solid transparent;
+	padding : 1rem 0;
+	
+}
+
+.goods-list li:hover {
+	border: 1px solid var(--primary-color);
+	
+}
+
+/* user post */
+.user-post {
+	padding : 0 0 0 1rem;
+	box-sizing: border-box;
+}
+
+.post-author {
+	margin : 1rem 0 0 0;
+	
+}
+
+.post-date {
+	margin : 1rem 0 0 0;
+	
+}
+
+.post-body{
+	margin : 2rem 0 0 0;
+}
+
+
+
+.post-author .material-symbols-outlined, .post-date .material-symbols-outlined{
+	vertical-align: middle;
+}
+
+/*=================event ======================= */
+.item{
+	overflow : hidden;
+	height : 177px;
+}
+.item .item-first{
+	float : left;
+}
+
+.item .item-last{
+	float : right;
+}
+
+.pager{
+	text-align: center;
+	
+}
+
+.pager a{
+	border : 1px solid var(--primary-color);
+	display: inline-block; /* 텍스트 -> 크기 x 글꼴크기 o */
+	width : 15px;
+	height : 15px;
+	border-radius: 50%;
+	overflow: hidden;
+	font-size : 0;
+}
+
+.pager a:nth-child(1){
+	background-color: var(--primary-color);
+}
+.pager a:nth-child(2){
+	margin : 0 .5rem;
+}
+/* =================aside============== */
+aside.container-fluid{
+	background-color: var(--primary-color);
+}
+
+
+/* =================footer============== */
+footer.container{
+	position:relative;
+}
+
+.guide-links li{
+	display: inline-block;
+	font-size: 0.875rem;
+}
+.guide-links li:nth-child(2){
+	margin : 0 .5rem;
+}
+
+.logo-bottom{
+	position: absolute;
+	right : 0;
+	top : 1rem;
+}
+
