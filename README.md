@@ -7,3 +7,6 @@ viewpart 실습(4주차 주제 - 04.미니언즈)
 ## 사용언어
 -html5
 -css3
+
+## 사이트맵
+![미니언즈 사이트맵] (https://picsum.photos/id/100/600/400)
