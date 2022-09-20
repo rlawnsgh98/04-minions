@@ -17,8 +17,49 @@ body{
 	color : #222;
 	line-height: 1.5;
 	letter-spacing: -1px;
+	max-width : 1190px;
+	overflow : hidden;
 	
 }
+
+/* pop up */
+#popup{
+	display : none;
+	position : fixed;
+	left : 0;
+	top : 0;
+	width : 100vw;
+	height : 100vh;
+}
+
+#popup.bg{
+	background-color : rgba(0,0,0, .3); 
+}
+
+.content{
+	position : absolute;
+	width : 940px;
+	height : 530px;
+	left : 50%;
+	top : 50%;
+	margin-left : calc(-940px / 2);
+	margin-top: calc(-530 / 2);
+}
+
+#close {
+	position : absolute;
+	width : 100px;
+	height : 100px;
+	background : black;
+	color : white;
+	border-radius : 50%;
+	right : 25%;
+	top : 20%;
+	font-size : 3rem;
+}
+
+
+
 /* ========== 구글폰트 =============== */
 .material-symbols-outlined {
   font-variation-settings:
@@ -246,6 +287,8 @@ body{
 	vertical-align: middle;
 }
 
+
+
 /*=================event ======================= */
 .item{
 	overflow : hidden;
@@ -305,3 +348,69 @@ footer.container{
 	top : 1rem;
 }
 
+
+/* about style */
+
+.about-title{
+	font-size : 3rem;
+	text-align : center;
+	color : var(--primary-color);
+}
+
+.article-links {
+	margin : 0 -10px;
+	overflow:hidden;
+}
+
+.article-links li{
+	float : left;
+	width : calc(100% / 3);
+	border : 1px solid var(--primary-color);
+	text-align : center;
+	padding : .5rem;
+	box-sizing: border-box;
+}
+
+.article-links li.selected{
+	background-color: var(--primary-color);
+	 
+}
+
+
+.article-links li a{
+	color : inherit;
+}
+
+/* 시놉시스 */
+#synopsis{
+	overflow : hidden;
+}
+
+#synopsis .poster{
+	float : left;
+	width : 50%;
+}
+#synopsis .intro{
+	float : right;
+	width : 50%;
+}
+.intro-header{
+	margin : 2rem 0 0 0;
+}
+.intro-body{
+	margin : 2rem 0 0 0;
+	
+}
+.intro-end{
+	margin : 2rem 0 0 0;
+}
+
+.chars td{
+	padding : .25rem;
+}
+
+.chars td img{
+	max-width : 100%;
+	width : 80%;
+	
+}

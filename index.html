@@ -11,11 +11,33 @@
 		<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
 		<link rel="stylesheet" href="css/style.css" />
 		<!-- 깃으로 관리되는 index.html -->
+		<script src = "//code.jquery.com/jquery-latest.min.js"></script>
 	</head>
 	
 	
 	
 	<body>
+		<script>
+			$(function(){
+				setTimeout(showAterLoad, 3000);
+				function showAfterLoad(){
+					$("#popup").css("display", "block");
+					$("body").css("overflow", "hidden");
+					
+				}
+					
+				$("#close").click(function(){
+					$("#popup").css("display", "none");
+					$("body").css("overflow", "auto");
+					})
+			})
+		</script>
+		<div id = "popup" class = "bg">
+			<div class = "content">
+				<img src="images/big-event-cut.jpg" alt="미니언즈 이벤트" />
+				<button type ="button" id = "close">&times;</button>
+			</div>
+		</div>
 		<h1 class = "d-none">Minions : The Rise of Gru</h1>
 		
 		<header>
