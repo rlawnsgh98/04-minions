@@ -1,7 +1,7 @@
 /**
  * 
  */
- window.addEventListener("DOMContentLoaded", function(){
+ 				window.addEventListener("DOMContentLoaded", function(){
 				setTimeout(showAfterLoad, 3000);
 				
 				const popup = document.querySelector("#popup");
@@ -28,3 +28,34 @@
 					$("body").css("overflow", "auto");
 					}) */
 			})
+			
+			
+			const NEXT = document.querySelector(".next");
+			let postIndex = 0;
+			NEXT.addEventListener("click", function(){
+				postIndex++;
+				const POSTS = document.querySelector("#posts");
+				
+				if(postIndex >= 3) postIndex = 0;
+				
+			
+				
+				let coord = -920 * postIndex;
+				POSTS.style.marginLeft = coord + "px";
+				
+			})
+			
+			const PREV = document.querySelector(".prev");
+			PREV.addEventListener("click", function(){
+				postIndex--;
+				const POSTS = document.querySelector("#posts");
+				
+				if(postIndex <= -1) postIndex = 2;
+				
+			
+				
+				let coord = -920 * postIndex;
+				POSTS.style.marginLeft = coord + "px";
+				
+			})
+			
