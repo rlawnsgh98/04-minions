@@ -11,27 +11,13 @@
 		<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
 		<link rel="stylesheet" href="css/style.css" />
 		<!-- 깃으로 관리되는 index.html -->
-		<script src = "//code.jquery.com/jquery-latest.min.js"></script>
 	</head>
 	
 	
 	
 	<body>
-		<script>
-			$(function(){
-				setTimeout(showAterLoad, 3000);
-				function showAfterLoad(){
-					$("#popup").css("display", "block");
-					$("body").css("overflow", "hidden");
-					
-				}
-					
-				$("#close").click(function(){
-					$("#popup").css("display", "none");
-					$("body").css("overflow", "auto");
-					})
-			})
-		</script>
+		
+		<script src= "script/main.js"></script>
 		<div id = "popup" class = "bg">
 			<div class = "content">
 				<img src="images/big-event-cut.jpg" alt="미니언즈 이벤트" />
@@ -121,20 +107,68 @@
 					
 						<div class = "carousel">
 						
-							<div class = "attach-img">
-								<img src="images/attach.png" alt="첨부이미지" />
-							</div>
-							
-							<div class = "user-post">
-								<p class = "post-author">
-									<span class="material-symbols-outlined">account_circle</span>
-									by junho
-								</p>
-								<p class = "post-date">
-									<span class="material-symbols-outlined">calendar_month</span>
-									2022/8/30</p>
-								<p class = "post-body">fdsfdasfdasfaasfdasfd</p>
-							</div>
+							<div id="posts"><div class="post">
+									<div class = "attach-img">
+										<img src="images/attach1.png" alt="첨부이미지" />
+									</div>
+									
+									<div class = "user-post">
+									
+										<p class = "post-author">
+											<span class="material-symbols-outlined">account_circle</span>
+											gh****1214
+										</p>
+										<p class = "post-date">
+											<span class="material-symbols-outlined">calendar_month</span>
+											2022/8/30</p>
+										<p class = "post-body">qrstufadssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss</p>
+										
+										
+									</div>
+								</div>
+								<!-- /.post -->
+								
+								<div class="post">
+									<div class = "attach-img">
+										<img src="images/attach2.png" alt="첨부이미지" />
+									</div>
+									
+									<div class = "user-post">
+									
+										<p class = "post-author">
+											<span class="material-symbols-outlined">account_circle</span>
+											s***6345
+										</p>
+										<p class = "post-date">
+											<span class="material-symbols-outlined">calendar_month</span>
+											2022/8/30</p>
+										<p class = "post-body">efgdsssssssssssssssssssssssssssssssssssssssssssssss</p>
+										
+										
+									</div>
+								</div>
+								<!-- /.post -->
+								
+								<div class="post">
+									<div class = "attach-img">
+										<img src="images/attach3.png" alt="첨부이미지" />
+									</div>
+									
+									<div class = "user-post">
+									
+										<p class = "post-author">
+											<span class="material-symbols-outlined">account_circle</span>
+											j**1234
+										</p>
+										<p class = "post-date">
+											<span class="material-symbols-outlined">calendar_month</span>
+											2022/8/30</p>
+										<p class = "post-body">abcdggggggggggggggggggggggggggggggggggggg</p>
+										
+										
+									</div>
+								</div>
+								<!-- /.post --></div>
 						</div>
 					
 						<div class = "next">	
@@ -211,8 +245,8 @@
 						</div>
 					</div>
 				</article>
-			</div>
-		</section>
+		</div>
+	</section>
 		
 		<aside class = "container-fluid mt-100">
 			<div class = "container">
@@ -230,11 +264,11 @@
 				</ul>
 				<p>&copy; <strong>minions&trade</strong>all rights reserved.</p>
 			</div>
-			<div class = "logo-bottom">
+			<!-- <div class = "logo-bottom">
 				<a href="#">
 					<img src="images/footer_logo.png" alt="미니언즈2">
 				</a>
-			</div>
+			</div> -->
 		</footer>
 	</body>
 </html>
